@@ -1,11 +1,13 @@
 require_relative 'item'
 
 class Book < Item
-  def initialize(genre, author, label, publish_date, publisher, cover_state = 'unknown')
-    super(genre, author, label, publish_date)
+  def initialize(publisher:, cover_state:, **args)
+    super(**args)
     @publisher = publisher
     @cover_state = cover_state
   end
+
+  private
 
   def can_be_archived?
     super || @cover_state == 'bad'
