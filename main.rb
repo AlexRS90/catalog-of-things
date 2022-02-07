@@ -1,35 +1,35 @@
 require_relative 'menu'
 
-def main 
+def main
   state = true
 
-  while state == true do
+  while state == true
     List.list
 
     choice = gets.chomp
 
     case choice
     when '1'
-      #List books
+      # List books
     when '2'
-      #List all music albums
+      # List all music albums
     when '3'
-      #List all games
+      # List all games
     when '4'
-      #List all genres
+      # List all genres
     when '5'
-      #list all labels
+      # list all labels
     when '6'
-      #List all author
+      # List all author
     when '7'
-      #Add a book
+      # Add a book
     when '8'
-      #Add a music album
+      # Add a music album
     when '9'
-      #Add a game
+      # Add a game
     when '10'
       state = false
-      puts "Bye Bye"
+      puts 'Bye Bye'
     end
   end
 end
