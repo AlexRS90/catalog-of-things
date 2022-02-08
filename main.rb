@@ -1,5 +1,5 @@
 require_relative 'menu'
-require_relative './logic/music_album'
+require_relative './actions/music_album'
 
 class App
   attr_reader :albums, :genres

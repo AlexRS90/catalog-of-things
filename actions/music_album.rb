@@ -5,7 +5,7 @@ require_relative '../classes/item'
 module MusicAlbum
   def list_all_music_albums(musics)
     musics.each do |music|
-      puts "ID: #{music.id}, On Spotify: #{music.on_spotify}"
+      puts "ID: #{music.id}, On_Spotify: #{music.on_spotify}"
     end
   end
 
@@ -20,7 +20,7 @@ module MusicAlbum
     on_spotify = nil
     while on_spotify != 'y' && on_spotify != 'n'
       print 'On Spotify? [y/n]: '
-      on_spotify = gets.chomp.downcase
+      on_spotify = gets.chomp
       case on_spotify
       when 'y'
         true
@@ -32,7 +32,13 @@ module MusicAlbum
     end
     print 'Published Date: '
     published_date = gets.chomp
-    Music.new(published_date, on_spotify)
+    print 'Published Genre: '
+    genre = gets.chomp
+    print 'Published Author: '
+    author = gets.chomp
+    print 'Published Label: '
+    label = gets.chomp
+    Music.new(on_spotify: on_spotify, publish_date: published_date, genre: genre, author: author, label: label)
   end
 
   def create_genre
