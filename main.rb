@@ -1,16 +1,19 @@
 require_relative 'menu'
+require './actions/add_book'
+require './actions/list_books'
+require_relative 'loader'
+require 'json'
 
 def main
   state = true
+  books = Loader.json_loader('./data/books.json')
 
   while state == true
     List.list
-
     choice = gets.chomp
-
     case choice
     when '1'
-      # List books
+      BookList.list_books(books)
     when '2'
       # List all music albums
     when '3'
@@ -22,7 +25,8 @@ def main
     when '6'
       # List all author
     when '7'
-      # Add a book
+      AddBook.add_book(books)
+      File.write('./data/books.json', JSON.dump(books))
     when '8'
       # Add a music album
     when '9'
