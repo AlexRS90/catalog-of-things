@@ -3,7 +3,7 @@ require_relative '../classes/genre'
 require_relative '../classes/item'
 
 module MusicAlbum
-  def create_music
+  def self.create_music(album)
     on_spotify = nil
     while on_spotify != 'y' && on_spotify != 'n'
       print 'On Spotify? [y/n]: '
@@ -25,12 +25,13 @@ module MusicAlbum
     author = gets.chomp
     print 'Published Label: '
     label = gets.chomp
-    Music.new(on_spotify: on_spotify, publish_date: published_date, genre: genre, author: author, label: label)
-  end
 
-  def create_genre
-    print 'Name: '
-    genre = gets.chomp
-    Genre.new(genre)
+    music_instance = Music.new(on_spotify: on_spotify, publish_date: published_date, genre: genre, author: author,
+                               label: label)
+    music_album = {
+      'class' => 'Music', 'id' => music_instance.id, 'on_spotify' => music_instance.on_spotify
+    }
+    album << music_album
+    puts 'music album created'
   end
 end
