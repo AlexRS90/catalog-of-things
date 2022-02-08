@@ -1,10 +1,11 @@
-require 'json'
-require_relative 'loader'
-require_relative 'menu'
+require 'menu'
 require './actions/add_book'
 require './actions/list_books'
+require 'loader'
 require './actions/music_album'
 require './actions/list_musics'
+require './actions/add_genre'
+require './actions/list_genres'
 
 def main
   state = true
@@ -25,7 +26,7 @@ def main
       # List all games
     when '4'
       # List all genres
-      GenreList.list_genres(genres)
+      GenreList.list_all_genres(genres)
     when '5'
       # list all labels
     when '6'
@@ -35,11 +36,16 @@ def main
       File.write('./data/books.json', JSON.dump(books))
     when '8'
       # Add a music album
-      File.write('./data/musics.json', JSON.dump(musics))
+      # app.albums.push(app.create_music)
+      # albums = JSON.parse(app.albums)
+      MusicAlbum.create_music(albums)
+      File.write('./data/musics.json', JSON.dump(albums))
     when '9'
       # Add a game
     when '10'
       # Add a genre
+      # app.genres.push(app.create_genre)
+      AddGenre.add_genre(genres)
       File.write('./data/genres.json', JSON.dump(genres))
     when '11'
       state = false
