@@ -1,3 +1,4 @@
+# rubocop:disable Metrics/MethodLength
 require 'menu'
 require './actions/add_book'
 require './actions/list_books'
@@ -54,4 +55,5 @@ def main
   end
 end
 
+# rubocop:enable Metrics/MethodLength
 main
