@@ -3,19 +3,6 @@ require_relative '../classes/genre'
 require_relative '../classes/item'
 
 module MusicAlbum
-  def list_all_music_albums(musics)
-    musics.each do |music|
-      puts "ID: #{music.id}, On Spotify: #{music.on_spotify}"
-    end
-  end
-
-  def list_all_genres(genres)
-    genres.each do |genre|
-      puts "ID: #{genre.id}, Genre: #{genre.name}"
-    end
-    puts ''
-  end
-
   def create_music
     on_spotify = nil
     while on_spotify != 'y' && on_spotify != 'n'

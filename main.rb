@@ -1,50 +1,46 @@
+require 'json'
+require_relative 'loader'
 require_relative 'menu'
-require_relative './actions/music_album'
-
-class App
-  attr_reader :albums, :genres
-
-  include MusicAlbum
-  def initialize
-    @albums = []
-    @genres = []
-  end
-end
+require './actions/add_book'
+require './actions/list_books'
+require './actions/music_album'
+require './actions/list_musics'
 
 def main
   state = true
-  app = App.new
+  books = Loader.json_loader('./data/books.json')
+  albums = Loader.json_loader('./data/musics.json')
+  genres = Loader.json_loader('./data/genres.json')
 
   while state == true
     List.list
-
     choice = gets.chomp
-
     case choice
     when '1'
-      # List books
+      BookList.list_books(books)
     when '2'
       # List all music albums
-      app.list_all_music_albums(app.albums)
+      MusicList.list_music_albums(albums)
     when '3'
       # List all games
     when '4'
       # List all genres
-      app.list_all_genres(app.genres)
+      GenreList.list_genres(genres)
     when '5'
       # list all labels
     when '6'
       # List all author
     when '7'
-      # Add a book
+      AddBook.add_book(books)
+      File.write('./data/books.json', JSON.dump(books))
     when '8'
       # Add a music album
-      app.albums.push(app.create_music)
+      File.write('./data/musics.json', JSON.dump(musics))
     when '9'
       # Add a game
     when '10'
       # Add a genre
-      app.genres.push(app.create_genre)
+      File.write('./data/genres.json', JSON.dump(genres))
     when '11'
       state = false
       puts 'Bye Bye'

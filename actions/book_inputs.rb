@@ -9,11 +9,13 @@ class BookInputs
     print 'Publisher: '
     book_publisher = gets.chomp
     print 'Published Date: '
-    book_date = gets.chomp
+    book_date = gets.chomp.to_i
     print 'Cover State: '
     book_cover_state = gets.chomp.downcase
-    print 'Labels: '
-    book_label = gets.chomp.downcase
-    [book_name, book_author, book_genre, book_publisher, book_date, book_cover_state, book_label]
+    print 'Label Title: '
+    label_title = gets.chomp.downcase
+    print 'Label Color:'
+    label_color = gets.chomp.downcase
+    [book_name, book_author, book_genre, book_publisher, book_date, book_cover_state, label_title, label_color]
   end
 end

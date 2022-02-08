@@ -1,1 +1,38 @@
-[{"json_class":"book","title":"Lord of the rings","author":"Tolkien","Cover State":"good","id":5614}]
+[
+  {
+    "json_class": "book",
+    "title": "dfg",
+    "genre": "dfg",
+    "author": "dfg",
+    "Cover State": "dfg",
+    "label": { "json_class": "label", "title": "dfg", "color": "dfg" },
+    "id": 5308
+  },
+  {
+    "json_class": "book",
+    "title": "asdsad",
+    "genre": "dfgfg",
+    "author": "sdfgfg",
+    "Cover State": "sg",
+    "label": { "json_class": "label", "title": "dfg", "color": "dfgfg" },
+    "id": 8530
+  },
+  {
+    "json_class": "book",
+    "title": "asd",
+    "genre": "sad",
+    "author": "asd",
+    "Cover State": "dfg",
+    "label": { "json_class": "label", "title": "dfg", "color": "dfg" },
+    "id": 8168
+  },
+  {
+    "json_class": "book",
+    "title": "dfg",
+    "genre": "dfg",
+    "author": "dfg",
+    "Cover State": "dfg",
+    "label": { "json_class": "label", "title": "dfg", "color": "dfg" },
+    "id": 8350
+  }
+]
