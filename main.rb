@@ -11,11 +11,7 @@ def main
   state = true
   books = Loader.json_loader('./data/books.json')
   albums = Loader.json_loader('./data/musics.json')
-<<<<<<< HEAD
-  genres = Loader.json_loader('./data/genres.json')
   games = Loader.json_loader('./data/games.json')
-=======
->>>>>>> d2cde9108c8222b1bd40945d06d57baafb3cc23e
 
   while state == true
     List.list
@@ -47,7 +43,6 @@ def main
       File.write('./data/games.json', JSON.dump(games))
     when '10'
       state = false
-      puts 'Bye Bye'
     end
   end
 end
