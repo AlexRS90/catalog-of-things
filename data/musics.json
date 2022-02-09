@@ -1,1 +1,19 @@
-[{"json_class":"Album","id":6691,"on_spotify":"y"}]
+[
+  {
+    "class": "album",
+    "id": 6784,
+    "on_spotify": null,
+    "genre": {
+      "name": "gf"
+    },
+    "author": {
+      "firstname": "gf",
+      "lastname": "gf"
+    },
+    "label": {
+      "title": "gf",
+      "color": "gf"
+    },
+    "archived": false
+  }
+]
