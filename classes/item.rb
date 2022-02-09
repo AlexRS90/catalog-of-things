@@ -10,7 +10,7 @@ class Item
     @archive = false
   end
 
-  def add_genre(label)
+  def add_label(label)
     @label = label
     @label.items.push(self) unless @genre.include?(genre)
   end
