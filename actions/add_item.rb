@@ -1,7 +1,7 @@
 require './classes/book'
-require_relative 'item_inputs'
-require_relative 'book_inputs'
-require_relative 'instance_creator'
+require_relative '../inputs/item_inputs'
+require_relative '../inputs/book_inputs'
+require_relative '../actions/instance_creator'
 require 'json'
 
 class AddItem
