@@ -6,7 +6,7 @@ require_relative '../inputs/album_inputs'
 
 module MusicAlbum
   def self.create_music(album)
-    item_name, item_genre, item_author_first, item_author_last, item_label_title,
+    item_genre, item_author_first, item_author_last, item_label_title,
     item_label_color, item_date = ItemInputs.item_inputs
     on_spotify = AlbumInputs.album_inputs
 
@@ -18,11 +18,11 @@ module MusicAlbum
                                label: label)
     music_album = {
       'class' => 'album',
-      'id' => music_instance.id, 
-      'on_spotify' => music_instance.on_spotify, 
-      'genre' => music_instance.genre, 
-      'author' => music_instance.author, 
-      'label' => music_instance.label, 
+      'id' => music_instance.id,
+      'on_spotify' => music_instance.on_spotify,
+      'genre' => music_instance.genre,
+      'author' => music_instance.author,
+      'label' => music_instance.label,
       'archived' => music_instance.archive
     }
     album << music_album
