@@ -1,38 +1,58 @@
 [
   {
     "json_class": "book",
-    "title": "dfg",
-    "genre": "dfg",
-    "author": "dfg",
-    "Cover State": "dfg",
-    "label": { "json_class": "label", "title": "dfg", "color": "dfg" },
-    "id": 5308
+    "genre": { "name": "sdf", "genre": "sdf" },
+    "author": { "firstname": "dsf", "lastname": "sdf" },
+    "Cover State": "sdf",
+    "label": { "title": "dsdsf", "color": "sdf" },
+    "publish date": "sdff",
+    "id": 7336
   },
   {
     "json_class": "book",
-    "title": "asdsad",
-    "genre": "dfgfg",
-    "author": "sdfgfg",
-    "Cover State": "sg",
-    "label": { "json_class": "label", "title": "dfg", "color": "dfgfg" },
-    "id": 8530
+    "genre": { "name": "Lord of the rings", "genre": "Fantasy" },
+    "author": { "firstname": "TOlkien", "lastname": "tolkien" },
+    "Cover State": "good",
+    "label": { "title": "New", "color": "red" },
+    "publish date": "2020/12/12",
+    "id": 3924
   },
   {
     "json_class": "book",
-    "title": "asd",
-    "genre": "sad",
-    "author": "asd",
-    "Cover State": "dfg",
-    "label": { "json_class": "label", "title": "dfg", "color": "dfg" },
-    "id": 8168
+    "genre": { "name": "test", "genre": "test" },
+    "author": { "firstname": "tes", "lastname": "tese" },
+    "Cover State": "bfb",
+    "label": { "title": "sfd", "color": "t" },
+    "publish date": "dfgfb",
+    "id": 372
   },
   {
     "json_class": "book",
-    "title": "dfg",
-    "genre": "dfg",
-    "author": "dfg",
+    "genre": { "name": "sdf", "genre": "sdf" },
+    "author": { "firstname": "sdf", "lastname": "sdf" },
+    "Cover State": "sdf",
+    "label": { "title": "sdf", "color": "sdf" },
+    "publish date": "sdf",
+    "id": 8593
+  },
+  {
+    "json_class": "book",
+    "genre": { "name": "sdf", "genre": "sdff" },
+    "author": { "firstname": "df", "lastname": "dfg" },
     "Cover State": "dfg",
-    "label": { "json_class": "label", "title": "dfg", "color": "dfg" },
-    "id": 8350
+    "label": { "title": "dfg", "color": "dfg" },
+    "publish date": "dfg",
+    "id": 8477,
+    "archived": false
+  },
+  {
+    "json_class": "book",
+    "genre": { "name": "asd", "genre": "asd" },
+    "author": { "firstname": "sad", "lastname": "asd" },
+    "Cover State": "sa",
+    "label": { "title": "asd", "color": "asd" },
+    "publish date": "asd",
+    "id": 4690,
+    "archived": false
   }
 ]

@@ -1,12 +1,12 @@
 # rubocop:disable Metrics/MethodLength
-require 'menu'
-require './actions/add_book'
+require_relative 'menu'
+require_relative 'loader'
 require './actions/list_books'
-require 'loader'
 require './actions/music_album'
 require './actions/list_musics'
 require './actions/add_genre'
 require './actions/list_genres'
+require './actions/add_item'
 
 def main
   state = true
@@ -33,7 +33,7 @@ def main
     when '6'
       # List all author
     when '7'
-      AddBook.add_book(books)
+      AddItem.add_new_item(books, choice)
       File.write('./data/books.json', JSON.dump(books))
     when '8'
       # Add a music album
