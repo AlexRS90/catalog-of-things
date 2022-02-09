@@ -1,6 +1,7 @@
 require './classes/book'
 require_relative 'item_inputs'
 require_relative 'book_inputs'
+require_relative 'album_inputs'
 require_relative 'instance_creator'
 require 'json'
 
@@ -25,6 +26,11 @@ class AddItem
                'archived' => book_instance.archive }
       store << book
       puts 'Book Created'
+      when '8'
+        item_name, item_genre, item_author_first, item_author_last, item_label_title,
+        item_label_color, item_date = ItemInputs.item_inputs
+        on_spotify = AlbumInputs.album_inputs
+        
     end
   end
 end
