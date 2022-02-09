@@ -15,6 +15,11 @@ class Item
     @genre.item.push(self) unless @genre.include?(genre)
   end
 
+  def add_author=(author)
+    @author = author
+    @author.item.push(self) unless @author.item.inclide?(self)
+  end
+
   def move_to_archive
     @archive = true if can_be_archived?
   end
