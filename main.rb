@@ -7,12 +7,14 @@ require './actions/list_musics'
 require './actions/add_genre'
 require './actions/list_genres'
 require './actions/add_item'
+require './actions/add_games'
 
 def main
   state = true
   books = Loader.json_loader('./data/books.json')
   albums = Loader.json_loader('./data/musics.json')
   genres = Loader.json_loader('./data/genres.json')
+  games = Loader.json_loader('./data/games.json')
 
   while state == true
     List.list
@@ -43,6 +45,8 @@ def main
       File.write('./data/musics.json', JSON.dump(albums))
     when '9'
       # Add a game
+      AddGame.add_new_game(games)
+      File.write('./data/games.json', JSON.dump(games))
     when '10'
       # Add a genre
       # app.genres.push(app.create_genre)
