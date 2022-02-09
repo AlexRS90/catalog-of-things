@@ -17,7 +17,7 @@ class Item
 
   def add_author=(author)
     @author = author
-    @author.item.push(self) unless @author.item.inclide?(self)
+    @author.item.push(self) unless @author.item.include?(self)
   end
 
   def move_to_archive
