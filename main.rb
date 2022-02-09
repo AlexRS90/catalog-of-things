@@ -1,10 +1,8 @@
-# rubocop:disable Metrics/MethodLength
 require_relative 'menu'
 require_relative 'loader'
 require './actions/list_books'
 require './actions/music_album'
 require './actions/list_musics'
-require './actions/add_genre'
 require './actions/list_genres'
 require './actions/add_item'
 require './actions/add_games'
@@ -13,8 +11,11 @@ def main
   state = true
   books = Loader.json_loader('./data/books.json')
   albums = Loader.json_loader('./data/musics.json')
+<<<<<<< HEAD
   genres = Loader.json_loader('./data/genres.json')
   games = Loader.json_loader('./data/games.json')
+=======
+>>>>>>> d2cde9108c8222b1bd40945d06d57baafb3cc23e
 
   while state == true
     List.list
@@ -29,7 +30,6 @@ def main
       # List all games
     when '4'
       # List all genres
-      GenreList.list_all_genres(genres)
     when '5'
       # list all labels
     when '6'
@@ -39,8 +39,6 @@ def main
       File.write('./data/books.json', JSON.dump(books))
     when '8'
       # Add a music album
-      # app.albums.push(app.create_music)
-      # albums = JSON.parse(app.albums)
       MusicAlbum.create_music(albums)
       File.write('./data/musics.json', JSON.dump(albums))
     when '9'
@@ -48,16 +46,10 @@ def main
       AddGame.add_new_game(games)
       File.write('./data/games.json', JSON.dump(games))
     when '10'
-      # Add a genre
-      # app.genres.push(app.create_genre)
-      AddGenre.add_genre(genres)
-      File.write('./data/genres.json', JSON.dump(genres))
-    when '11'
       state = false
       puts 'Bye Bye'
     end
   end
 end
 
-# rubocop:enable Metrics/MethodLength
 main
