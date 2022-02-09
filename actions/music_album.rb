@@ -14,8 +14,9 @@ module MusicAlbum
     author = InstanceCreator.author_instance(item_author_first, item_author_last)
     label = InstanceCreator.label_instance(item_label_title, item_label_color)
 
-    music_instance = Music.new(name: item_name, on_spotify: on_spotify, publish_date: item_date, genre: genre, author: author,
-                               label: label)
+    music_instance = Music.new(name: item_name, on_spotify: on_spotify, publish_date: item_date, genre: genre,
+                               author: author, label: label)
+
     music_album = {
       'class' => 'album',
       'id' => music_instance.id,
