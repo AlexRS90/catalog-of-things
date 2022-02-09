@@ -20,7 +20,7 @@ class AddGame
     game = { 'json_class' => 'game', 'genre' => game_instance.genre,
              'author' => game_instance.author, 'label' => game_instance.label,
              'publish_date' => game_instance.publish_date, 'multiplayer' => game_instance.multiplayer,
-             'last_played_at' => game_instance.last_played_at}
+             'last_played_at' => game_instance.last_played_at }
     games << game
     puts 'Game Crated'
   end
