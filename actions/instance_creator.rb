@@ -3,8 +3,8 @@ require './classes/author'
 require './classes/label'
 
 class InstanceCreator
-  def self.genre_instance(item_name)
-    genre = Genre.new(name: item_name)
+  def self.genre_instance(genre_name)
+    genre = Genre.new(name: genre_name)
     { 'name' => genre.name }
   end
 

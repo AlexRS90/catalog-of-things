@@ -4,7 +4,7 @@ require './actions/list_books'
 require './actions/music_album'
 require './actions/list_musics'
 require './actions/list_genres'
-require './actions/add_item'
+require './actions/add_book'
 require './actions/add_games'
 
 def main
@@ -31,7 +31,7 @@ def main
     when '6'
       # List all author
     when '7'
-      AddItem.add_new_item(books, choice)
+      AddBook.add_book(books)
       File.write('./data/books.json', JSON.dump(books))
     when '8'
       # Add a music album
