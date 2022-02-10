@@ -10,16 +10,6 @@ class Item
     @archive = false
   end
 
-  def add_genre(genre)
-    @genre = genre
-    @genre.items.push(self) unless @genre.include?(genre)
-  end
-
-  def add_author=(author)
-    @author = author
-    @author.item.push(self) unless @author.item.include?(self)
-  end
-
   def move_to_archive
     @archive = true if can_be_archived?
   end

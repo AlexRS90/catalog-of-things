@@ -8,6 +8,7 @@ require './actions/add_book'
 require './actions/add_games'
 require './actions/list_games'
 require './actions/list_authors'
+require './actions/list_labels'
 
 def menu(state, books, albums, games)
   while state == true
@@ -25,22 +26,22 @@ def menu(state, books, albums, games)
       # List all genres
       GenreList.list_all_genres(games, books, albums)
     when '5'
-      # list all labels
+      Labels.list_all_labels(games, books, albums)
     when '6'
       Author.list_all_authors(games, books, albums)
     when '7'
       AddBook.add_book(books)
       File.write('./data/books.json', JSON.dump(books))
     when '8'
-      # Add a music album
       MusicAlbum.create_music(albums)
       File.write('./data/musics.json', JSON.dump(albums))
     when '9'
-      # Add a game
       AddGame.add_new_game(games)
       File.write('./data/games.json', JSON.dump(games))
     when '10'
       state = false
+    else
+      puts 'Invalid input, try again'
     end
   end
 end
