@@ -1,4 +1,59 @@
 [
+    {
+        "class": "album",
+        "id": 6784,
+        "on_spotify": null,
+        "genre": {
+            "name": "gf"
+        },
+        "author": {
+            "firstname": "gf",
+            "lastname": "gf"
+        },
+        "label": {
+            "title": "gf",
+            "color": "gf"
+        },
+        "archived": false
+    },
+    {
+        "class": "album",
+        "id": 3685,
+        "on_spotify": null,
+        "genre": {
+            "name": "sdf"
+        },
+        "author": {
+            "firstname": "fg",
+            "lastname": "ghj"
+        },
+        "label": {
+            "title": "ghj",
+            "color": "fgh"
+        },
+        "archived": false
+    },
+    {
+        "class": "album",
+        "id": 1222,
+        "title": "My album",
+        "on_spotify": [
+            "y"
+        ],
+        "genre": {
+            "name": "Rock"
+        },
+        "author": {
+            "firstname": "sdf",
+            "lastname": "fds"
+        },
+        "label": {
+            "title": "new",
+            "color": "blue"
+        },
+        "archived": false
+    }
+
   {
     "class": "album",
     "id": 6784,
