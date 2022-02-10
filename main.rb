@@ -23,6 +23,7 @@ def menu(state, books, albums, games)
       GameList.list_all_games(games)
     when '4'
       # List all genres
+      GenreList.list_all_genres(games, books, albums)
     when '5'
       # list all labels
     when '6'
