@@ -24,8 +24,6 @@ class Item
     @archive = true if can_be_archived?
   end
 
-  private
-
   def can_be_archived?
     @publish_date > 10
   end

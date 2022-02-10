@@ -9,7 +9,7 @@ class Music < Item
     @on_spotify = on_spotify
   end
 
-  private
+  # private
 
   def can_be_archived?
     true if super && @on_spotify
