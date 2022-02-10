@@ -6,13 +6,10 @@ require './actions/list_musics'
 require './actions/list_genres'
 require './actions/add_book'
 require './actions/add_games'
+require './actions/list_games'
+require './actions/list_authors'
 
-def main
-  state = true
-  books = Loader.json_loader('./data/books.json')
-  albums = Loader.json_loader('./data/musics.json')
-  games = Loader.json_loader('./data/games.json')
-
+def menu(state, books, albums, games)
   while state == true
     List.list
     choice = gets.chomp
@@ -23,13 +20,13 @@ def main
       # List all music albums
       MusicList.list_music_albums(albums)
     when '3'
-      # List all games
+      GameList.list_all_games(games)
     when '4'
       # List all genres
     when '5'
       # list all labels
     when '6'
-      # List all author
+      Author.list_all_authors(games, books, albums)
     when '7'
       AddBook.add_book(books)
       File.write('./data/books.json', JSON.dump(books))
@@ -45,6 +42,14 @@ def main
       state = false
     end
   end
+end
+
+def main
+  state = true
+  books = Loader.json_loader('./data/books.json')
+  albums = Loader.json_loader('./data/musics.json')
+  games = Loader.json_loader('./data/games.json')
+  menu(state, books, albums, games)
 end
 
 main
