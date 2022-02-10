@@ -16,6 +16,10 @@ and of course you can list all collections of data that is preserved using JSON 
 ![image](https://user-images.githubusercontent.com/58233753/153499285-8cba7cf1-e784-4ef3-8d34-75ac3aa81eca.png)
 
 
+## Project Documentation
+
+- Use this [link](https://drive.google.com/file/d/1ICQurK07X3jPnKLJx9CTNhvXcaDh2t3t/view?usp=sharing) to watch the project documentation video.
+
 ## Built With
 
 - Ruby
