@@ -10,17 +10,17 @@ class AddGame
     item_label_color, item_date = ItemInputs.item_inputs
     multiplayer, game_last_played = GameInput.game_inputs
 
-    genre = InstanceCreator.genre_instance(item_genre)
-    author = InstanceCreator.author_instance(item_author_first, item_author_last)
-    label = InstanceCreator.label_instance(item_label_title, item_label_color)
-
     game_instance = Game.new(name: item_name, multiplayer: multiplayer == 'y', last_played_at: game_last_played,
-                             genre: genre, author: author, label: label, publish_date: item_date)
+                             genre: {}, author: {}, label: {}, publish_date: item_date)
 
-    game = { 'json_class' => 'game', 'title' => game_instance.name, 'genre' => game_instance.genre,
-             'author' => game_instance.author, 'label' => game_instance.label,
-             'publish_date' => game_instance.publish_date, 'multiplayer' => game_instance.multiplayer,
-             'last_played_at' => game_instance.last_played_at }
+    genre = InstanceCreator.genre_instance(item_genre, game_instance)
+    author = InstanceCreator.author_instance(item_author_first, item_author_last, game_instance)
+    label = InstanceCreator.label_instance(item_label_title, item_label_color, game_instance)
+
+    game = { 'json_class' => 'game', 'title' => game_instance.name, 'genre' => genre,
+             'author' => author, 'label' => label, 'publish_date' => game_instance.publish_date,
+             'multiplayer' => game_instance.multiplayer, 'last_played_at' => game_instance.last_played_at }
+
     games << game
     puts 'Game Crated'
   end
