@@ -1,6 +1,6 @@
 class ItemInputs
   def self.item_inputs
-    print 'Item Name: '
+    print 'Title: '
     item_name = gets.chomp
     print 'Genre: '
     item_genre = gets.chomp
