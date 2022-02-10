@@ -5,7 +5,7 @@ class GameList
       print "#{idx}) Title: #{game['title']}, Gender: #{game['genre']['name']}, Author: #{game['author']['firstname']} "
       print "#{game['author']['lastname']}, Multiplayer: #{game['multiplayer']}"
       puts
-    end  
+    end
     puts
   end
 end
