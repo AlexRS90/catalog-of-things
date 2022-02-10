@@ -15,6 +15,6 @@ class InstanceCreator
 
   def self.label_instance(item_label_title, item_label_color)
     label = Label.new(title: item_label_title, color: item_label_color)
-    { 'title' => label.title, 'color' => label.color }
+    { 'title' => label.title, 'color' => label.color, 'items' => label.items }
   end
 end
