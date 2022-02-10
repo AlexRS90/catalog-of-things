@@ -18,12 +18,10 @@ def menu(state, books, albums, games)
     when '1'
       BookList.list_books(books)
     when '2'
-      # List all music albums
       MusicList.list_music_albums(albums)
     when '3'
       GameList.list_all_games(games)
     when '4'
-      # List all genres
       GenreList.list_all_genres(games, books, albums)
     when '5'
       Labels.list_all_labels(games, books, albums)
