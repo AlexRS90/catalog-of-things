@@ -70,5 +70,23 @@
         "publish_date": "39281",
         "multiplayer": false,
         "last_played_at": "329812"
+    },
+    {
+        "json_class": "game",
+        "title": "Mario Bros",
+        "genre": {
+            "name": "Adventure"
+        },
+        "author": {
+            "firstname": "Nintendo",
+            "lastname": "64"
+        },
+        "label": {
+            "title": "Best Game Ever",
+            "color": "Gold"
+        },
+        "publish_date": "434523",
+        "multiplayer": true,
+        "last_played_at": "324354"
     }
 ]

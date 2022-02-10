@@ -1,14 +1,1 @@
-[
-  { "title": "new", "color": "red", "items": [] },
-  {
-    "json_class": "book",
-    "title": "sdf",
-    "genre": { "name": "sdf" },
-    "author": { "firstname": "dsf", "lastname": "sdf" },
-    "Cover State": "sdf",
-    "label": { "title": "sdf", "color": "sdf", "items": [] },
-    "publish date": "dsf",
-    "id": 8535,
-    "archived": false
-  }
-]
+[{"json_class":"book","title":"sdf","genre":{"name":"sdf"},"author":{"firstname":"dsf","lastname":"sdf"},"Cover State":"sdf","label":{"title":"sdf","color":"sdf","items":[]},"publish date":"dsf","id":8535,"archived":false},{"json_class":"book","title":"Harry Potter","genre":{"name":"Adventure"},"author":{"firstname":"JK","lastname":"Rowling"},"Cover State":"good","label":{"title":"Azkaban","color":"green"},"publish date":"324312","id":8162,"archived":false}]
