@@ -1,1 +1,74 @@
-[{"json_class":"game","title":"Game","genre":{"name":"Shooter"},"author":{"firstname":"Bungee","lastname":"Microsoft"},"label":{"title":"Enjoy","color":"Green"},"publish_date":"334422","multiplayer":"y","last_played_at":"433212"},{"json_class":"game","title":"Halo","genre":{"name":"FPS"},"author":{"firstname":"hola","lastname":"mundo"},"label":{"title":"gold","color":"dja"},"publish_date":"3223","multiplayer":"y","last_played_at":"3291"},{"json_class":"game","title":"Zelda","genre":{"name":"Action"},"author":{"firstname":"Miyamoto","lastname":"Shigeru"},"label":{"title":"Best game","color":"Gold"},"publish_date":"32431","multiplayer":true,"last_played_at":"328917"},{"json_class":"game","title":"Mario","genre":{"name":"Adventure"},"author":{"firstname":"Shigeru","lastname":"Miyamoto"},"label":{"title":"Good","color":"Red"},"publish_date":"39281","multiplayer":false,"last_played_at":"329812"}]
+[
+    {
+        "json_class": "game",
+        "title": "Game",
+        "genre": {
+            "name": "Shooter"
+        },
+        "author": {
+            "firstname": "Bungee",
+            "lastname": "Microsoft"
+        },
+        "label": {
+            "title": "Enjoy",
+            "color": "Green"
+        },
+        "publish_date": "334422",
+        "multiplayer": "y",
+        "last_played_at": "433212"
+    },
+    {
+        "json_class": "game",
+        "title": "Halo",
+        "genre": {
+            "name": "FPS"
+        },
+        "author": {
+            "firstname": "hola",
+            "lastname": "mundo"
+        },
+        "label": {
+            "title": "gold",
+            "color": "dja"
+        },
+        "publish_date": "3223",
+        "multiplayer": "y",
+        "last_played_at": "3291"
+    },
+    {
+        "json_class": "game",
+        "title": "Zelda",
+        "genre": {
+            "name": "Action"
+        },
+        "author": {
+            "firstname": "Miyamoto",
+            "lastname": "Shigeru"
+        },
+        "label": {
+            "title": "Best game",
+            "color": "Gold"
+        },
+        "publish_date": "32431",
+        "multiplayer": true,
+        "last_played_at": "328917"
+    },
+    {
+        "json_class": "game",
+        "title": "Mario",
+        "genre": {
+            "name": "Adventure"
+        },
+        "author": {
+            "firstname": "Shigeru",
+            "lastname": "Miyamoto"
+        },
+        "label": {
+            "title": "Good",
+            "color": "Red"
+        },
+        "publish_date": "39281",
+        "multiplayer": false,
+        "last_played_at": "329812"
+    }
+]
