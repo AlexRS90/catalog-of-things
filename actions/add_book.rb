@@ -1,7 +1,7 @@
 require './classes/book'
-require_relative '../inputs/item_inputs'
-require_relative '../inputs/book_inputs'
-require_relative '../actions/instance_creator'
+require './inputs/item_inputs'
+require './inputs/book_inputs'
+require './actions/instance_creator'
 require 'json'
 
 class AddBook
@@ -19,8 +19,8 @@ class AddBook
 
     book = { 'json_class' => 'book', 'title' => book_instance.name, 'genre' => genre,
              'author' => author, 'Cover State' => book_instance.cover_state,
-             'label' => label, 'publish date' => book_instance.publish_date, 'id' => book_instance.id,
-             'archived' => book_instance.archive }
+             'label' => label, 'publisher' => book_instance.publisher, 'publish date' => book_instance.publish_date,
+             'id' => book_instance.id, 'archived' => book_instance.archive }
     books << book
     puts 'Book Created'
   end
