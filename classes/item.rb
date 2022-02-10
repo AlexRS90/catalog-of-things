@@ -10,14 +10,9 @@ class Item
     @archive = false
   end
 
-  def add_label(label)
-    @label = label
-    @label.items.push(self) unless @genre.include?(genre)
-  end
-
   def add_genre(genre)
     @genre = genre
-    @genre.item.push(self) unless @genre.include?(genre)
+    @genre.items.push(self) unless @genre.include?(genre)
   end
 
   def add_author=(author)

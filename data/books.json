@@ -1,1 +1,14 @@
-[{"json_class":"book","title":"Harry Potter","genre":{"name":"Adventure"},"author":{"firstname":"JK","lastname":"Rowling"},"Cover State":"good","label":{"title":"Askaban","color":"Green"},"publish date":"322154","id":4066,"archived":false}]
+[
+  { "title": "new", "color": "red", "items": [] },
+  {
+    "json_class": "book",
+    "title": "sdf",
+    "genre": { "name": "sdf" },
+    "author": { "firstname": "dsf", "lastname": "sdf" },
+    "Cover State": "sdf",
+    "label": { "title": "sdf", "color": "sdf", "items": [] },
+    "publish date": "dsf",
+    "id": 8535,
+    "archived": false
+  }
+]
