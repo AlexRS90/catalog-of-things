@@ -6,6 +6,7 @@ require './actions/list_musics'
 require './actions/list_genres'
 require './actions/add_book'
 require './actions/add_games'
+require './actions/list_games'
 
 def main
   state = true
@@ -23,7 +24,7 @@ def main
       # List all music albums
       MusicList.list_music_albums(albums)
     when '3'
-      # List all games
+      GameList.list_all_games(games)
     when '4'
       # List all genres
     when '5'
