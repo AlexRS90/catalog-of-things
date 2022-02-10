@@ -6,6 +6,16 @@
 > In this project we create a command line application to save books, music albums and games, you can add its authors, labels and genders
 and of course you can list all collections of data that is preserved using JSON files.
 
+## Screenshot
+- App UI
+
+![image](https://user-images.githubusercontent.com/58233753/153499088-16543955-3939-41eb-b16d-e201f4980543.png)
+
+- UML Diagram
+
+![image](https://user-images.githubusercontent.com/58233753/153499285-8cba7cf1-e784-4ef3-8d34-75ac3aa81eca.png)
+
+
 ## Built With
 
 - Ruby
@@ -26,7 +36,7 @@ Enjoy storing things!
 👤 **Josue Ntwali**
 
 - GitHub: [@Ntwali-Josue](https://github.com/Ntwali-Josue)
-- Twitter: [@Ntwali-Josue](https://twitter.com)
+- Twitter: [@Ntwali-Josue](https://twitter.com/JosueNtwali)
 
 👤 **Alejandro Ramos**
 
