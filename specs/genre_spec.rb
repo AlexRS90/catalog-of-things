@@ -5,10 +5,11 @@ describe Genre do
   before(:each) do
     @new_genre = Genre.new(name: 'Genre')
     @item = Item.new(
-      genre: 'genre', 
-      author: 'Author', 
-      label: 'Label', 
-      publish_date: 20)
+      genre: 'genre',
+      author: 'Author',
+      label: 'Label',
+      publish_date: 20
+    )
   end
   context 'When testing creation of genre instance' do
     it 'Should create a genre when we call the class constructor' do

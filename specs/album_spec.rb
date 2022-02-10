@@ -2,12 +2,12 @@ require_relative '../classes/musics'
 
 describe Music do
   before(:each) do
-    @new_album = Music.new(name: 'Album', 
-      on_spotify: 'y', 
-      genre: 'genre', 
-      author: 'Author', 
-      label: 'Label', 
-      publish_date: 20)
+    @new_album = Music.new(name: 'Album',
+                           on_spotify: 'y',
+                           genre: 'genre',
+                           author: 'Author',
+                           label: 'Label',
+                           publish_date: 20)
   end
   context 'When testing album' do
     it 'should return new album object' do
