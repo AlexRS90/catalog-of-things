@@ -40,7 +40,7 @@ def menu(state, books, albums, games)
       File.write('./data/games.json', JSON.dump(games))
     when '10'
       state = false
-    else 
+    else
       puts 'Invalid input, try again'
     end
   end
