@@ -30,6 +30,11 @@ Run the folloging command on your terminal <code>git clone https://github.com/Al
 and then run the next command <code>ruby main.rb</code>
 Enjoy storing things!
 
+To test the methods you can run the following commands:
+<code>cd specs</code>
+<code>rpec</code> + name of the file to test for example:
+<code>rpec album_spec.rb</code>
+
 ### Prerequisites
 
 - Ruby
