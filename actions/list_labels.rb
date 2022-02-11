@@ -7,12 +7,12 @@ class Labels
       puts "#{idx + 1}) #{game['label']['title']}"
     end
     puts
-    puts "Book's Authors:"
+    puts "Book's Labels:"
     books.each_with_index do |book, idx|
       puts "#{idx + 1}) #{book['label']['title']}"
     end
     puts
-    puts 'Album Music Authors:'
+    puts 'Album Music Labels:'
     musics.each_with_index do |music, idx|
       puts "#{idx + 1}) #{music['label']['title']}"
     end
