@@ -6,7 +6,8 @@ describe Item do
       genre: 'Genre',
       author: 'Author',
       label: 'Label',
-      publish_date: 20)
+      publish_date: 20
+    )
   end
   context 'when testing the item class' do
     it 'should return true if published date is greater than 10' do

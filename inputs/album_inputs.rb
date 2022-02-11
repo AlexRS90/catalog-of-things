@@ -13,6 +13,6 @@ class AlbumInputs
         puts 'invalid input'
       end
     end
-    [on_spotify]
+    on_spotify
   end
 end
