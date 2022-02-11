@@ -12,7 +12,7 @@ class Game < Item
 
   private
 
-  def can_be_archived?()
-    true if @last_played_at > 2
+  def can_be_archived?
+    true if super && @last_played_at > 2
   end
 end
