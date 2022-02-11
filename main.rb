@@ -1,5 +1,6 @@
 require_relative 'menu'
 require_relative 'loader'
+require_relative 'create_json'
 require './actions/list_books'
 require './actions/music_album'
 require './actions/list_musics'
@@ -10,7 +11,7 @@ require './actions/list_games'
 require './actions/list_authors'
 require './actions/list_labels'
 
-def menu(state, books, albums, games)
+def menu(books, albums, games, state: true)
   while state == true
     List.list
     choice = gets.chomp
@@ -45,11 +46,13 @@ def menu(state, books, albums, games)
 end
 
 def main
-  state = true
+  CreateFiles.book_file
+  CreateFiles.album_file
+  CreateFiles.game_file
   books = Loader.json_loader('./data/books.json')
   albums = Loader.json_loader('./data/musics.json')
   games = Loader.json_loader('./data/games.json')
-  menu(state, books, albums, games)
+  menu(books, albums, games)
 end
 
 main
